@@ -61,7 +61,7 @@ const SidebarEl = () => {
     <Menu
     menuItemStyles={{
       button: {
-      padding:"5px",
+        padding: "5px 35px 5px 20px",
         [`&:hover`]: {
           color: '#868dfb',
           background:'transparent'
@@ -76,7 +76,7 @@ const SidebarEl = () => {
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
-              margin: "5px 0 5px 0",
+              margin: "10px 0px 20px 0px",
               color: colors.grey[100],
             }}
           >
@@ -124,6 +124,13 @@ const SidebarEl = () => {
           setSelected={setSelected}
           />
 
+        <Typography
+        variant='h6'
+        color={colors.grey[300]}
+        sx={{m:"15px 0 0px 20px"}}
+        >
+          Data
+        </Typography>
         <Item 
           title={"Manage Team"}
           to={"/team"}
@@ -151,6 +158,13 @@ const SidebarEl = () => {
           />
 
       
+      <Typography
+        variant='h6'
+        color={colors.grey[300]}
+        sx={{m:"15px 0 5px 20px"}}
+        >
+          Pages
+        </Typography>
           <Item 
           title={"Profile Form"}
           to={"/form"}
@@ -177,7 +191,13 @@ const SidebarEl = () => {
           />
 
 
-        
+        < Typography
+        variant='h6'
+        color={colors.grey[300]}
+        sx={{m:"15px 0 0 20px"}}
+        >
+          Charts
+        </Typography>
         <Item 
           title={"Bar Chart"}
           to={"/bar"}
